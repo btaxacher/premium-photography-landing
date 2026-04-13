@@ -1,11 +1,11 @@
 'use client'
 
-import { Camera, Heart, Plane, Ring, Sparkles } from 'lucide-react'
+import { Camera, Heart, Plane, Gem, Sparkles } from 'lucide-react'
 import { InteractiveSelector, type SelectorOption } from '@/components/ui/interactive-selector'
 import { Section, Eyebrow, EditorialHeading } from '@/components/ui/section'
 import { services } from '@/lib/content'
 
-const ICONS = [Ring, Camera, Heart, Sparkles, Plane]
+const ICONS = [Gem, Camera, Heart, Sparkles, Plane]
 
 export function Services() {
   const options: SelectorOption[] = services.map((s, i) => {

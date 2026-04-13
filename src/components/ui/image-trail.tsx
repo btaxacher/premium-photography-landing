@@ -1,6 +1,6 @@
 'use client'
 
-import { Children, useCallback, useEffect, useMemo, useRef, type RefObject } from 'react'
+import { Children, useCallback, useEffect, useMemo, useRef, useState, type RefObject } from 'react'
 import {
   type AnimationSequence,
   motion,
@@ -51,7 +51,8 @@ export function ImageTrail({
   const lastMousePosRef = useRef(mousePosition)
   const currentIndexRef = useRef(0)
   const childrenArray = useMemo(() => Children.toArray(children), [children])
-  const [, forceRender] = useAnimate()
+  const [, setTick] = useState(0)
+  const forceRender = useCallback(() => setTick((t) => t + 1), [])
 
   const addToTrail = useCallback(
     (mousePos: { x: number; y: number }) => {
@@ -67,7 +68,7 @@ export function ImageTrail({
       currentIndexRef.current = (currentIndexRef.current + 1) % Math.max(childrenArray.length, 1)
       if (newOnTop) trailRef.current.push(newItem)
       else trailRef.current.unshift(newItem)
-      forceRender(0)
+      forceRender()
     },
     [childrenArray, rotationRange, animationSequence, newOnTop, forceRender],
   )
