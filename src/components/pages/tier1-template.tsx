@@ -6,6 +6,8 @@ import { SubPageHero } from '@/components/sections/sub-page-hero'
 import { ProseSection } from '@/components/sections/prose-section'
 import { CTA } from '@/components/sections/cta'
 import { Breadcrumbs } from '@/components/sections/breadcrumbs'
+import { InternalLinks } from '@/components/sections/internal-links'
+import { cities, services } from '@/lib/locations'
 import { brand } from '@/lib/content'
 
 export function tier1Metadata(slug: string): Metadata {
@@ -50,6 +52,14 @@ export function Tier1Page({ slug }: { slug: string }) {
   }
 
   const shortLabel = entry.h1.split('—')[0].trim()
+
+  // Internal links: 3 related city pages + 2 service pages
+  const relatedCities = cities.slice(0, 3).map((c) => ({
+    href: `/fotograf/${c.slug}`, label: `Fotograf ${c.name}`, hint: `${c.distanceKm} km`,
+  }))
+  const relatedServices = services.slice(0, 2).map((s) => ({
+    href: `/leistungen/${s.slug}`, label: s.name, hint: s.startingPrice,
+  }))
 
   return (
     <main className="relative min-h-screen">
@@ -130,6 +140,7 @@ export function Tier1Page({ slug }: { slug: string }) {
         </>
       )}
 
+      <InternalLinks title="Verwandte Themen" links={[...relatedServices, ...relatedCities]} />
       <CTA />
 
       {faqSchema && (
