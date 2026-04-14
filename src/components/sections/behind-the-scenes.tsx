@@ -30,7 +30,7 @@ export function BehindTheScenes() {
           MOMENTE
         </h2>
         <p className="mt-6 text-fg-muted max-w-md">
-          Bewege die Maus. So fühlt sich ein Shootingtag für mich an.
+          Bewege die Maus. So fühlt sich ein Shootingtag bei uns an.
         </p>
       </div>
     </section>

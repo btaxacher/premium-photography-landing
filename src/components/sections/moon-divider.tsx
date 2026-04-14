@@ -33,7 +33,7 @@ export function MoonDivider() {
           ))}
         </div>
         <p className="mt-10 text-center text-fg-subtle text-xs tracking-[0.3em] uppercase">
-          Luna — das Licht, das sich erinnert
+          Lichtraum — das Licht, das sich erinnert
         </p>
       </motion.div>
     </div>

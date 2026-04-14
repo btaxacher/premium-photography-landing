@@ -4,31 +4,33 @@
  */
 
 export const brand = {
-  name: 'LUNA FERRIS',
-  studio: 'Luna Ferris Studio',
-  tagline: 'Hochzeits- & Portraitfotografie',
-  email: 'kontakt@lunaferris.de',
+  name: 'LICHTRAUM',
+  studio: 'Lichtraum Fotostudio',
+  tagline: 'Hochzeits-, Portrait- & Businessfotografie',
+  email: 'kontakt@lichtraum-studio.de',
   phone: '+49 2251 123 456',
-  location: 'Köln · Euskirchen · Kerpen · Erftstadt',
-  region: 'Raum Köln & Rhein-Erft-Kreis',
-  instagram: '@lunaferris.studio',
+  location: 'Euskirchen · Köln · Bonn · Rheinland',
+  region: 'Euskirchen & Großraum Köln/Bonn',
+  instagram: '@lichtraum.studio',
 } as const
 
 export const seo = {
-  title: 'Fotograf Köln, Euskirchen, Kerpen & Erftstadt | Luna Ferris Studio',
+  title: 'Fotograf Euskirchen | Lichtraum Studio – Hochzeit, Portrait, Business',
   description:
-    'Fotografie-Studio im Raum Köln, Euskirchen, Kerpen & Erftstadt. Hochzeitsfotografie, Portraits, Paar- und Familienshootings. Jetzt Termin anfragen — Antwort innerhalb von 24 Stunden.',
+    'Lichtraum Fotostudio in Euskirchen – Hochzeitsfotograf, Bewerbungsfotos, Portraits für Köln, Bonn und das Rheinland. Termin vereinbaren.',
   keywords: [
-    'Fotograf Köln',
     'Fotograf Euskirchen',
-    'Fotograf Kerpen',
-    'Fotograf Erftstadt',
+    'Fotostudio Euskirchen',
+    'Hochzeitsfotograf Euskirchen',
+    'Bewerbungsfotos Euskirchen',
     'Hochzeitsfotograf Köln',
-    'Hochzeitsfotograf NRW',
-    'Portraitfotograf Rhein-Erft',
-    'Familienfotograf Köln',
-    'Paarshooting Euskirchen',
-    'Fotostudio Kerpen',
+    'Bewerbungsfotos Köln',
+    'Fotograf Köln',
+    'Fotograf Bonn',
+    'Portraitfotograf Köln',
+    'Babyfotograf Köln',
+    'Businessfotograf Köln',
+    'Schwangerschaftsfotos Köln',
   ],
 } as const
 
@@ -70,10 +72,10 @@ export const hero = {
 } as const
 
 export const manifest = {
-  eyebrow: 'Über mich',
+  eyebrow: 'Über das Studio',
   title: 'Es sind die leisen Momente,\ndie lauter erzählen als jedes Wort.',
-  body: `Ich fotografiere keine Hochzeiten. Ich fotografiere das Zögern vor dem ersten Tanz, den Blick, den nur zwei verstehen, die Hand, die eine andere sucht. Portraits sind für mich keine Inszenierung — sondern das Zugehen auf einen Menschen, bis das Bild selbst entscheidet, wann es entstehen darf.`,
-  signature: '— Luna',
+  body: `Wir fotografieren keine Hochzeiten. Wir fotografieren das Zögern vor dem ersten Tanz, den Blick, den nur zwei verstehen, die Hand, die eine andere sucht. Portraits sind für uns keine Inszenierung — sondern das Zugehen auf einen Menschen, bis das Bild selbst entscheidet, wann es entstehen darf.`,
+  signature: '— Lichtraum Studio',
 } as const
 
 const U = (id: string, w = 1400) =>
@@ -84,7 +86,7 @@ const U = (id: string, w = 1400) =>
 export const services = [
   {
     title: 'Hochzeitsfotografie',
-    description: 'Ganztagsbegleitung als Reportage — Köln, Euskirchen & Umgebung',
+    description: 'Ganztagsbegleitung als Reportage — Euskirchen, Köln, Bonn & Rheinland',
     image: IMG('/images/services/weddings.jpg', U('photo-1519741497674-611481863552')),
   },
   {
@@ -94,7 +96,7 @@ export const services = [
   },
   {
     title: 'Familien & Kinder',
-    description: 'Natürliche Familienshootings zuhause oder draußen im Rhein-Erft-Kreis',
+    description: 'Natürliche Familienshootings zuhause oder draußen im Raum Euskirchen & Köln',
     image: IMG('/images/services/family.jpg', U('photo-1478131143081-80f7f84ca84d')),
   },
   {
@@ -104,7 +106,7 @@ export const services = [
   },
   {
     title: 'Babybauch & Newborn',
-    description: 'Schwangerschafts- und Babyshootings im Studio Kerpen',
+    description: 'Schwangerschafts- und Babyshootings im Studio Euskirchen',
     image: IMG('/images/services/maternity.jpg', U('photo-1519689680058-324335c77eba')),
   },
 ] as const
@@ -164,11 +166,11 @@ export const trailImages = [
 ].map((id, i) => IMG(`/images/trail/t-0${i + 1}.jpg`, U(id, 400)))
 
 export const testimonials = [
-  { image: AVATAR(1), name: 'Emilia & Jonas', handle: 'Hochzeit Toskana', body: 'Luna hat Momente eingefangen, die wir nicht einmal selbst gesehen haben — das echte Lachen, das Zittern vor dem Ja. Jedes Bild fühlt sich an wie eine Erinnerung, bevor sie entsteht.' },
-  { image: AVATAR(2), name: 'Sofia Reichmann', handle: 'Editorial Berlin', body: 'Ich hatte Angst vor der Kamera. Luna hat mir eine Stille gegeben, in der ich endlich ich selbst sein konnte. Die Portraits sind das Ehrlichste, was ich je von mir gesehen habe.' },
+  { image: AVATAR(1), name: 'Emilia & Jonas', handle: 'Hochzeit Toskana', body: 'Das Team von Lichtraum hat Momente eingefangen, die wir nicht einmal selbst gesehen haben — das echte Lachen, das Zittern vor dem Ja. Jedes Bild fühlt sich an wie eine Erinnerung, bevor sie entsteht.' },
+  { image: AVATAR(2), name: 'Sofia Reichmann', handle: 'Editorial Berlin', body: 'Ich hatte Angst vor der Kamera. Lichtraum hat mir eine Stille gegeben, in der ich endlich ich selbst sein konnte. Die Portraits sind das Ehrlichste, was ich je von mir gesehen habe.' },
   { image: AVATAR(3), name: 'Charlotte & Mika', handle: 'Amalfi — Engagement', body: 'Diskret, aufmerksam, präsent — ohne je im Weg zu sein. Die Bilder sind kein Rückblick, sie sind ein Gefühl.' },
   { image: AVATAR(4), name: 'Elena Vogt', handle: 'Portraits im Atelier', body: 'Die Zusammenarbeit war ein Gespräch, kein Shooting. Das sieht man in jedem einzelnen Bild.' },
-  { image: AVATAR(5), name: 'Marie & Finn', handle: 'Südtirol', body: 'Wir wollten eine Hochzeit ohne Inszenierung. Luna hat uns einfach sein lassen — und das ist genau das, was wir heute in den Bildern wiederfinden.' },
+  { image: AVATAR(5), name: 'Marie & Finn', handle: 'Südtirol', body: 'Wir wollten eine Hochzeit ohne Inszenierung. Das Lichtraum-Team hat uns einfach sein lassen — und das ist genau das, was wir heute in den Bildern wiederfinden.' },
   { image: AVATAR(6), name: 'Helena Kraus', handle: 'Schwangerschaftsshoot', body: 'So viel Ruhe, so viel Raum. Ich habe mich selten so gesehen gefühlt wie an diesem Nachmittag.' },
 ] as const
 

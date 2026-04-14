@@ -58,17 +58,17 @@ export function Hero() {
 
             {/* SEO H1 */}
             <h1 className="editorial-display text-5xl md:text-6xl lg:text-7xl text-fg mb-6 leading-[1.05]">
-              Fotograf im Raum
+              Fotograf
               <br />
-              <span className="italic text-accent">Köln, Euskirchen</span>
+              <span className="italic text-accent">Euskirchen</span>
               <br />
-              <span className="text-fg">&amp; Rhein-Erft-Kreis</span>
+              <span className="text-fg">für Köln, Bonn &amp; das Rheinland</span>
             </h1>
 
             <p className="text-lg md:text-xl text-fg/90 max-w-xl leading-relaxed mb-10 font-light">
-              Hochzeiten, Paare, Familien &amp; Portraits — ehrlich eingefangen,
-              editorial erzählt. Termine für {new Date().getFullYear()} und{' '}
-              {new Date().getFullYear() + 1} jetzt anfragen.
+              Hochzeiten, Bewerbungsfotos, Portraits &amp; Business —
+              ehrlich eingefangen, editorial erzählt. Termine für{' '}
+              {new Date().getFullYear()} und {new Date().getFullYear() + 1} jetzt anfragen.
             </p>
 
             {/* CTAs */}

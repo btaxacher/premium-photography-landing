@@ -17,7 +17,7 @@ export function Nav() {
   const links = [
     { href: '#work', label: 'Portfolio' },
     { href: '#services', label: 'Leistungen' },
-    { href: '#about', label: 'Über mich' },
+    { href: '#about', label: 'Über uns' },
     { href: '#contact', label: 'Kontakt' },
   ]
 
