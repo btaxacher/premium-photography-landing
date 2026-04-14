@@ -1,9 +1,8 @@
 import Link from 'next/link'
 import { ChevronRight } from 'lucide-react'
+import { SITE_URL as BASE } from '@/lib/site-url'
 
 export type Crumb = { label: string; href?: string }
-
-const BASE = 'https://lichtraum-studio.vercel.app'
 
 export function Breadcrumbs({ items }: { items: Crumb[] }) {
   const full: Crumb[] = [{ label: 'Start', href: '/' }, ...items]

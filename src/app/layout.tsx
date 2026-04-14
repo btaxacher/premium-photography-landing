@@ -2,9 +2,11 @@ import type { Metadata } from 'next'
 import { Cormorant_Garamond, Inter, Playfair_Display } from 'next/font/google'
 import './globals.css'
 import { LenisProvider } from '@/components/providers/lenis-provider'
+import { Analytics } from '@/components/providers/analytics'
 import { Nav } from '@/components/sections/nav'
 import { Footer } from '@/components/sections/footer'
 import { seo, brand } from '@/lib/content'
+import { SITE_URL } from '@/lib/site-url'
 
 const display = Cormorant_Garamond({
   subsets: ['latin'],
@@ -32,7 +34,7 @@ export const metadata: Metadata = {
   title: seo.title,
   description: seo.description,
   keywords: [...seo.keywords],
-  metadataBase: new URL('https://lichtraum-studio.vercel.app'),
+  metadataBase: new URL(SITE_URL),
   alternates: { canonical: '/' },
   openGraph: {
     title: seo.title,
@@ -62,6 +64,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
           <Footer />
         </LenisProvider>
+        <Analytics />
         {/* Local-Business Structured Data for SEO */}
         <script
           type="application/ld+json"
@@ -70,9 +73,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               '@context': 'https://schema.org',
               '@type': ['LocalBusiness', 'ProfessionalService'],
               additionalType: 'https://schema.org/Photograph',
-              '@id': 'https://lichtraum-studio.vercel.app',
+              '@id': SITE_URL,
               name: brand.studio,
-              image: 'https://lichtraum-studio.vercel.app/og.jpg',
+              image: `${SITE_URL}/og.jpg`,
               description: seo.description,
               priceRange: '€€',
               address: {
@@ -102,7 +105,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               ],
               telephone: brand.phone,
               email: brand.email,
-              url: 'https://lichtraum-studio.vercel.app',
+              url: SITE_URL,
             }),
           }}
         />

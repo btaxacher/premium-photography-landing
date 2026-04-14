@@ -8,6 +8,7 @@ import { InternalLinks } from '@/components/sections/internal-links'
 import { CTA } from '@/components/sections/cta'
 import { Breadcrumbs } from '@/components/sections/breadcrumbs'
 import { brand } from '@/lib/content'
+import { SITE_URL } from '@/lib/site-url'
 
 export function generateStaticParams() {
   return cities.map((c) => ({ city: c.slug }))
@@ -50,7 +51,7 @@ export default async function CityPage({ params }: Props) {
     name: `${brand.studio} — ${entry.name}`,
     description: entry.tagline,
     areaServed: entry.name,
-    provider: { '@type': 'Organization', name: brand.studio, url: 'https://lichtraum-studio.vercel.app' },
+    provider: { '@type': 'Organization', name: brand.studio, url: SITE_URL },
     address: { '@type': 'PostalAddress', addressLocality: entry.name, postalCode: entry.postalCode, addressCountry: 'DE' },
   }
 

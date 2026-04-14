@@ -9,6 +9,7 @@ import { Breadcrumbs } from '@/components/sections/breadcrumbs'
 import { InternalLinks } from '@/components/sections/internal-links'
 import { cities, services } from '@/lib/locations'
 import { brand } from '@/lib/content'
+import { SITE_URL } from '@/lib/site-url'
 
 export function tier1Metadata(slug: string): Metadata {
   const entry = allTier1.find((t) => t.slug === slug)
@@ -45,7 +46,7 @@ export function Tier1Page({ slug }: { slug: string }) {
     provider: {
       '@type': 'LocalBusiness',
       name: brand.studio,
-      url: 'https://lichtraum-studio.vercel.app',
+      url: SITE_URL,
     },
     areaServed: slug.includes('koeln') ? 'Köln' : slug.includes('euskirchen') ? 'Euskirchen' : 'Rheinland',
     description: entry.description,

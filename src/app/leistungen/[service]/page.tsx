@@ -7,6 +7,7 @@ import { InternalLinks } from '@/components/sections/internal-links'
 import { CTA } from '@/components/sections/cta'
 import { Breadcrumbs } from '@/components/sections/breadcrumbs'
 import { brand } from '@/lib/content'
+import { SITE_URL } from '@/lib/site-url'
 
 export function generateStaticParams() {
   return services.map((s) => ({ service: s.slug }))
@@ -44,7 +45,7 @@ export default async function ServicePage({ params }: Props) {
     '@type': 'Service',
     name: entry.h1,
     description: entry.intro,
-    provider: { '@type': 'LocalBusiness', name: brand.studio, url: 'https://lichtraum-studio.vercel.app' },
+    provider: { '@type': 'LocalBusiness', name: brand.studio, url: SITE_URL },
     areaServed: ['Euskirchen', 'Köln', 'Bonn', 'Rhein-Erft'],
     offers: { '@type': 'Offer', price: entry.startingPrice.replace(/[^0-9]/g, ''), priceCurrency: 'EUR' },
   }

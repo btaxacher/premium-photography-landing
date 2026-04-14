@@ -7,6 +7,7 @@ import { SubPageHero } from '@/components/sections/sub-page-hero'
 import { ProseSection } from '@/components/sections/prose-section'
 import { CTA } from '@/components/sections/cta'
 import { brand } from '@/lib/content'
+import { SITE_URL } from '@/lib/site-url'
 
 export function generateStaticParams() {
   return blogPosts.map((p) => ({ slug: p.slug }))
@@ -44,13 +45,13 @@ export default async function BlogPost({ params }: Props) {
     description: post.description,
     datePublished: post.publishedDate,
     dateModified: post.publishedDate,
-    author: { '@type': 'Organization', name: post.author, url: 'https://lichtraum-studio.vercel.app' },
+    author: { '@type': 'Organization', name: post.author, url: SITE_URL },
     publisher: {
       '@type': 'Organization',
       name: brand.studio,
-      logo: { '@type': 'ImageObject', url: 'https://lichtraum-studio.vercel.app/og.jpg' },
+      logo: { '@type': 'ImageObject', url: `${SITE_URL}/og.jpg` },
     },
-    mainEntityOfPage: `https://lichtraum-studio.vercel.app/blog/${post.slug}`,
+    mainEntityOfPage: `${SITE_URL}/blog/${post.slug}`,
     keywords: post.keyword,
     wordCount: post.sections.reduce((n, s) => n + s.paragraphs.join(' ').split(/\s+/).length, 0),
     articleSection: post.category,

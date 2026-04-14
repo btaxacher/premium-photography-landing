@@ -1,8 +1,7 @@
 import type { MetadataRoute } from 'next'
 import { cities, services, allTier1 } from '@/lib/locations'
 import { blogPosts } from '@/content/blog-posts'
-
-const BASE = 'https://lichtraum-studio.vercel.app'
+import { SITE_URL as BASE } from '@/lib/site-url'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date()
