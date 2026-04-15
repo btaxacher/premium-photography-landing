@@ -29,8 +29,17 @@ export function Nav() {
       onMouseLeave={() => setOpenMenu(null)}
     >
       <div className="mx-auto max-w-[1440px] px-5 md:px-8 lg:px-12 flex items-center justify-between h-16 md:h-20">
-        <Link href="/" className="editorial-display text-lg md:text-xl tracking-tight text-fg">
-          {brand.name}
+        <Link
+          href="/"
+          className="flex flex-col items-start leading-none"
+          aria-label={`${brand.studio} — Startseite`}
+        >
+          <span className="script-heading text-2xl md:text-3xl normal-case tracking-normal">
+            Lichtraum
+          </span>
+          <span className="text-[0.55rem] md:text-[0.6rem] tracking-[0.35em] uppercase text-fg-subtle mt-0.5">
+            Fotostudio
+          </span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">

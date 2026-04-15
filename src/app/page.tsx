@@ -1,7 +1,6 @@
 import { Hero } from '@/components/sections/hero'
 import { PortfolioParallax } from '@/components/sections/portfolio-parallax'
 import { Manifest } from '@/components/sections/manifest'
-import { MoonDivider } from '@/components/sections/moon-divider'
 import { Services } from '@/components/sections/services'
 import { GalleryShuffle } from '@/components/sections/gallery-shuffle'
 import { ClientsSay } from '@/components/sections/clients-say'
@@ -13,7 +12,6 @@ export default function Home() {
       <Hero />
       <PortfolioParallax />
       <Manifest />
-      <MoonDivider />
       <Services />
       <GalleryShuffle />
       <ClientsSay />

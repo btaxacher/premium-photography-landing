@@ -102,7 +102,7 @@ export const services = [
   {
     title: 'Portraits & Business',
     description: 'Bewerbungsfotos, LinkedIn-Headshots, Branding-Portraits',
-    image: IMG('/images/services/portraits.jpg', U('photo-1494790108755-2616b612b786')),
+    image: IMG('/images/services/portraits.jpg', U('photo-1524504388940-b1c1722653e1')),
   },
   {
     title: 'Babybauch & Newborn',
@@ -134,7 +134,8 @@ export const masonryCards = [
   { profileImage: AVATAR(8), name: 'Anna M.', feedback: 'Fashion Editorial', mainImage: IMG('/images/masonry/m-08.jpg', U('photo-1515934751635-c81c6bc9a2d8', 900)) },
 ] as const
 
-// Verified Unsplash IDs — all wedding/portrait/couple/family, no architecture, no dead links
+// Proven-good Unsplash IDs (all reused from hero/parallax/trail sets, already
+// rendered live). No architecture, no confetti, no dead links.
 const SHUFFLE_REMOTE = [
   'photo-1519741497674-611481863552', // bride
   'photo-1606216794074-735e91aa2c92', // couple
@@ -147,11 +148,11 @@ const SHUFFLE_REMOTE = [
   'photo-1502823403499-6ccfcf4fb453', // rings
   'photo-1464207687429-7505649dae38', // dress
   'photo-1551038247-3d9af20df552', // bride flowers
-  'photo-1606800052052-a08af7148866', // reception
-  'photo-1492684223066-81342ee5ff30', // wedding ceremony
   'photo-1509927083803-4bd519298ac4', // wedding couple
-  'photo-1494790108755-2616b612b786', // portrait woman
-  'photo-1517841905240-472988babdf9', // portrait man
+  'photo-1519741497674-611481863552', // bride (repeat for variety)
+  'photo-1529634597503-139d3726fed5', // couple
+  'photo-1515934751635-c81c6bc9a2d8', // editorial bw
+  'photo-1525258946800-98cfd641d0de', // portrait bw
 ]
 
 export const shuffleImages = SHUFFLE_REMOTE.map((id, i) => ({
