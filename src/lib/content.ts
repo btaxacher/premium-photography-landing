@@ -140,21 +140,17 @@ export const masonryCards = [
   { profileImage: AVATAR(8), name: 'Anna M.', feedback: 'Fashion Editorial', mainImage: IMG('/images/masonry/m-08.jpg', U('photo-1515934751635-c81c6bc9a2d8', 900)) },
 ] as const
 
-// 12 unique, proven-good Unsplash IDs (all reused from hero/parallax sets
-// that already render live). No architecture, no duplicates, no dead links.
+// Only IDs already rendering live in the hero/parallax slideshows.
+// Guaranteed wedding/portrait content, no architecture leak possible.
 const SHUFFLE_REMOTE = [
-  'photo-1519741497674-611481863552', // bride
-  'photo-1606216794074-735e91aa2c92', // couple
-  'photo-1537633552985-df8429e8048b', // wedding
-  'photo-1519225421980-715cb0215aed', // wedding detail
-  'photo-1529634597503-139d3726fed5', // couple field
-  'photo-1525258946800-98cfd641d0de', // portrait bw
-  'photo-1515934751635-c81c6bc9a2d8', // editorial portrait
-  'photo-1524504388940-b1c1722653e1', // portrait woman
-  'photo-1502823403499-6ccfcf4fb453', // rings
-  'photo-1464207687429-7505649dae38', // dress
-  'photo-1551038247-3d9af20df552', // bride flowers
-  'photo-1509927083803-4bd519298ac4', // wedding couple
+  'photo-1519741497674-611481863552', // hero 1 — bride
+  'photo-1519225421980-715cb0215aed', // hero 2 — editorial portrait
+  'photo-1606216794074-735e91aa2c92', // hero 3 — wedding golden hour
+  'photo-1537633552985-df8429e8048b', // hero 4 — bride & groom
+  'photo-1515934751635-c81c6bc9a2d8', // hero 5 — B&W portrait
+  'photo-1525258946800-98cfd641d0de', // parallax — editorial portrait
+  'photo-1529634597503-139d3726fed5', // parallax — couple field
+  'photo-1524504388940-b1c1722653e1', // services — portrait woman
 ]
 
 export const shuffleImages = SHUFFLE_REMOTE.map((id, i) => ({
