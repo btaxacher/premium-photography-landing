@@ -24,12 +24,6 @@ const categoryLabels: Record<string, string> = {
   studio: 'Studio',
 }
 
-function gridClass(span?: string): string {
-  if (span === 'large') return 'md:col-span-2 md:row-span-2 aspect-[4/5] md:aspect-[4/5]'
-  if (span === 'medium') return 'aspect-[3/4]'
-  return 'aspect-square'
-}
-
 export default function PortfolioPage() {
   return (
     <main className="relative min-h-screen bg-bg">
@@ -54,18 +48,18 @@ export default function PortfolioPage() {
 
       <section className="bg-bg pb-14 md:pb-20">
         <div className="mx-auto w-full max-w-[1440px] px-5 md:px-8 lg:px-12">
-          <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[220px] md:auto-rows-[240px] gap-3 md:gap-5">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
             {portfolioItems.map((item, i) => (
               <figure
                 key={i}
-                className={`relative overflow-hidden rounded-sm bg-bg-card shadow-card group ${gridClass(item.span)}`}
+                className="relative overflow-hidden rounded-sm bg-bg-card shadow-card group aspect-[4/5]"
               >
                 <Image
                   src={item.src}
                   alt={item.alt}
                   fill
                   loading={i < 4 ? 'eager' : 'lazy'}
-                  sizes="(max-width: 768px) 50vw, 25vw"
+                  sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
                   className="object-cover transition-transform duration-700 ease-editorial group-hover:scale-[1.03]"
                 />
                 <figcaption className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-bg-charcoal/70 via-bg-charcoal/20 to-transparent text-fg-invert text-xs px-3 py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">

@@ -1,17 +1,17 @@
 import Image from 'next/image'
 
-type Image = { src: string; alt: string; aspect?: 'portrait' | 'landscape' | 'square' }
+type GalleryImage = { src: string; alt: string; aspect?: 'portrait' | 'landscape' | 'square' }
 
 type Props = {
-  images: Image[]
+  images: GalleryImage[]
   heading?: string
   eyebrow?: string
 }
 
 /**
  * Warm-Editorial Gallery Grid für Sub-Pages.
- * 6-9 Bilder, Masonry-ähnliches Grid via Tailwind grid-cols + variable aspect ratios.
- * Server-Component, kein Lightbox (halten es leicht für SEO-Sub-Pages).
+ * Uniform portrait aspect (4:5) — passt zu allen Nano-Banana-Ausgaben und vermeidet Lücken.
+ * Server-Component, kein Lightbox.
  */
 export function SubPageGallery({ images, heading, eyebrow }: Props) {
   return (
@@ -35,13 +35,7 @@ export function SubPageGallery({ images, heading, eyebrow }: Props) {
           {images.map((img, i) => (
             <div
               key={i}
-              className={`relative overflow-hidden rounded-sm bg-bg-card shadow-card ${
-                img.aspect === 'landscape'
-                  ? 'aspect-[4/3]'
-                  : img.aspect === 'square'
-                  ? 'aspect-square'
-                  : 'aspect-[3/4]'
-              }`}
+              className="relative overflow-hidden rounded-sm bg-bg-card shadow-card aspect-[4/5]"
             >
               <Image
                 src={img.src}
