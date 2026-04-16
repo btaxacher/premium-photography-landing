@@ -1,9 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { ArrowRight } from 'lucide-react'
 import { introContent } from '@/lib/content'
 
 const editorialEase = [0.22, 1, 0.36, 1] as const
@@ -48,9 +46,7 @@ export function IntroGreeting() {
             transition={{ duration: 0.9, delay: 0.15, ease: editorialEase }}
             className="md:col-span-3"
           >
-            <div className="eyebrow">{introContent.kicker}</div>
-
-            <p className="script-heading script-tilt-mild mt-4 text-3xl md:text-4xl lg:text-[3rem]">
+            <p className="script-heading script-tilt-mild text-3xl md:text-4xl lg:text-[3rem]">
               {introContent.script}
             </p>
 
@@ -70,17 +66,6 @@ export function IntroGreeting() {
             <p className="script-heading mt-8 text-2xl md:text-3xl">
               {introContent.signature}
             </p>
-
-            <Link
-              href={introContent.link.href}
-              className="group inline-flex items-center gap-2 mt-5 text-sm text-fg hover:text-accent-terra transition-colors duration-300 border-b border-accent-gold/50 pb-1"
-            >
-              {introContent.link.label}
-              <ArrowRight
-                size={14}
-                className="transition-transform duration-300 group-hover:translate-x-1"
-              />
-            </Link>
           </motion.div>
         </div>
       </div>

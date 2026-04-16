@@ -68,11 +68,14 @@ const WARM_UNSPLASH = {
   gallery07: 'photo-1555252333-9f8e92e65df9',
   gallery08: 'photo-1519225421980-715cb0215aed',
   gallery09: 'photo-1464207687429-7505649dae38',
-  avatarEmilia: 'photo-1499399244875-59ef3e1347e1',
-  avatarSofia: 'photo-1573496359142-b8d87734a5a2',
-  avatarMarie: 'photo-1529634597503-139d3726fed5',
+  avatarEmilia: 'photo-1494790108377-be9c29b29330', // Braun, Lächeln
+  avatarSofia: 'photo-1580489944761-15a19d654956',  // Frau Natural Light
+  avatarMarie: 'photo-1438761681033-6461ffad8d80',  // Porträt warm
+  avatarCharlotte: 'photo-1544005313-94ddf0286df2', // Zusätzlich: Charlotte
+  avatarElena: 'photo-1534528741775-53994a69daeb',  // Zusätzlich: Elena
+  avatarHelena: 'photo-1531746020798-e6953c6e8e04', // Zusätzlich: Helena
   blog01: 'photo-1519741497674-611481863552',
-  blog02: 'photo-1524504388940-b1c1722653e1',
+  blog02: 'photo-1551836022-aadb801c60ae',           // Business woman, rausgezoomt, warm
   blog03: 'photo-1606800052052-a08af7148866',
   studioInterior: 'photo-1617103996702-96ff29b1c467',
 }
@@ -85,7 +88,7 @@ export const heroContent = {
   script: 'Schön, dass du da bist.',
   h1: ['Fotograf Euskirchen', 'für Köln, Bonn & das Rheinland'], // SEO-critical, unverändert
   body:
-    'Hochzeiten, Bewerbungsfotos, Portraits & Familienmomente — ehrlich fotografiert, warm erzählt. Ohne Inszenierung, mit viel Raum für euch. Termine für 2026 und 2027 jetzt anfragen.',
+    'Hochzeiten, Bewerbungsfotos, Portraits und Familienmomente. Ohne Posen-Regie, ohne Eile — wir nehmen uns Zeit, bis das Bild von allein passiert. Termine für 2026 und 2027 jetzt anfragen.',
   primaryCta: { label: 'Termin anfragen', href: '#contact' },
   secondaryCta: { label: 'Unsere Arbeit ansehen', href: '#gallery' },
   trustItems: [
@@ -107,8 +110,8 @@ export const introContent = {
   script: 'Hallo, schön dich kennenzulernen.',
   h2: 'Wir sind Lichtraum. Und wir glauben an Bilder, die bleiben.',
   body: [
-    'Wir sind ein kleines Fotograf:innen-Team aus dem Rheinland — zuhause in Euskirchen, unterwegs in Köln, Bonn und überall dort, wo eure Geschichte passiert. Seit über sechs Jahren begleiten wir Hochzeiten, fotografieren Familien, machen Bewerbungsfotos, die wirklich wie ihr aussehen — und keine Katalog-Version.',
-    'Was uns unterscheidet: Wir lassen euch sein. Keine gestellten Posen, keine einstudierten Blicke. Stattdessen ein Gespräch, ein bisschen Zeit, und irgendwann entstehen die Bilder fast von allein. Das, was ihr auf unseren Fotos seht, seid wirklich ihr — am wärmsten Tag eures Jahres.',
+    'Wir sind ein kleines Team aus dem Rheinland. Basis in Euskirchen, unterwegs in Köln, Bonn und bei euch zuhause. Seit sechs Jahren fotografieren wir Hochzeiten, Familien und Bewerbungsfotos — und haben in der Zeit vor allem eins gelernt: wann es Sinn macht, den Finger auf den Auslöser zu legen. Und wann besser nicht.',
+    'Bei uns gibt es keine Posen-Regie. Kein „Kopf leicht nach rechts, Schulter runter". Ihr kommt an, wir reden, trinken einen Kaffee. Irgendwann vergesst ihr uns — und genau da entstehen die Bilder, die ihr später auch noch gern anschaut.',
   ],
   signature: '— Vanessa & Team',
   link: { label: 'Unsere Geschichte lesen', href: '/ueber-uns' },
@@ -270,21 +273,21 @@ export const testimonialsNew = [
       'Diskret, aufmerksam, präsent — ohne je im Weg zu sein. Die Bilder sind kein Rückblick, sie sind ein Gefühl.',
     name: 'Charlotte & Mika',
     meta: 'Engagement · Bonn · 2025',
-    avatar: IMG('/images/redesign/avatar-emilia.jpg', U(WARM_UNSPLASH.avatarEmilia, 400)),
+    avatar: IMG('/images/redesign/avatar-charlotte.jpg', U(WARM_UNSPLASH.avatarCharlotte, 400)),
   },
   {
     body:
       'Die Zusammenarbeit war ein Gespräch, kein Shooting. Das sieht man in jedem einzelnen Bild.',
     name: 'Elena Vogt',
     meta: 'Portraits im Studio · 2025',
-    avatar: IMG('/images/redesign/avatar-sofia.jpg', U(WARM_UNSPLASH.avatarSofia, 400)),
+    avatar: IMG('/images/redesign/avatar-elena.jpg', U(WARM_UNSPLASH.avatarElena, 400)),
   },
   {
     body:
       'So viel Ruhe, so viel Raum. Ich habe mich selten so gesehen gefühlt wie an diesem Nachmittag.',
     name: 'Helena Kraus',
     meta: 'Schwangerschaftsshooting · Euskirchen · 2025',
-    avatar: IMG('/images/redesign/avatar-marie.jpg', U(WARM_UNSPLASH.avatarMarie, 400)),
+    avatar: IMG('/images/redesign/avatar-helena.jpg', U(WARM_UNSPLASH.avatarHelena, 400)),
   },
 ] as const
 

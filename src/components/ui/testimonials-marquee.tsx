@@ -67,9 +67,8 @@ function MarqueeRow({
 
 export function TestimonialsMarquee({ testimonials }: { testimonials: readonly TestimonialCardT[] }) {
   return (
-    <div className="flex flex-col gap-2">
-      <MarqueeRow data={testimonials} reverse={false} speed={55} />
-      <MarqueeRow data={testimonials} reverse={true} speed={65} />
+    <div className="flex flex-col">
+      <MarqueeRow data={testimonials} reverse={false} speed={60} />
     </div>
   )
 }
