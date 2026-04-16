@@ -65,29 +65,30 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Footer />
         </LenisProvider>
         <Analytics />
-        {/* Local-Business Structured Data for SEO */}
+        {/* Root LocalBusiness + ProfessionalService + Photographer — gilt für alle Sub-Pages via @id */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
-              '@type': ['LocalBusiness', 'ProfessionalService'],
-              additionalType: 'https://schema.org/Photograph',
-              '@id': SITE_URL,
+              '@type': ['LocalBusiness', 'ProfessionalService', 'Photograph'],
+              '@id': `${SITE_URL}/#business`,
               name: brand.studio,
+              alternateName: brand.name,
               image: `${SITE_URL}/og.jpg`,
               description: seo.description,
               priceRange: '€€',
               address: {
                 '@type': 'PostalAddress',
+                streetAddress: 'Ladungsfähige Adresse vor Go-Live ergänzen',
+                addressLocality: 'Weilerswist',
+                postalCode: '53919',
                 addressRegion: 'NRW',
                 addressCountry: 'DE',
-                addressLocality: 'Euskirchen',
-                postalCode: '53879',
               },
               areaServed: [
-                'Euskirchen',
                 'Weilerswist',
+                'Euskirchen',
                 'Zülpich',
                 'Mechernich',
                 'Bad Münstereifel',
@@ -102,10 +103,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 'Bergheim',
                 'Leverkusen',
                 'Bergisch Gladbach',
+                'Siegburg',
+                'NRW',
               ],
-              telephone: brand.phone,
+              ...(brand.phone ? { telephone: brand.phone } : {}),
               email: brand.email,
               url: SITE_URL,
+              sameAs: [] as string[],
             }),
           }}
         />

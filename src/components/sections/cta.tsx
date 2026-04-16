@@ -68,8 +68,12 @@ export function CTA() {
               <a href={`mailto:${brand.email}`} className="hover:text-accent transition-colors">
                 {brand.email}
               </a>
-              <span className="text-fg-subtle/50">•</span>
-              <span>{brand.phone}</span>
+              {brand.phone ? (
+                <>
+                  <span className="text-fg-subtle/50">•</span>
+                  <span>{brand.phone}</span>
+                </>
+              ) : null}
               <span className="text-fg-subtle/50">•</span>
               <span>{brand.location}</span>
             </div>

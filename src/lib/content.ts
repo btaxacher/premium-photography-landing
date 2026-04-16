@@ -9,9 +9,9 @@ export const brand = {
   name: 'LICHTRAUM',
   studio: 'Lichtraum Fotostudio',
   tagline: 'Hochzeits-, Portrait- & Businessfotografie',
-  email: 'kontakt@lichtraum-studio.de',
+  email: 'kontakt@lichtraum-euskirchen.de',
   contactEmail: 'info@kandivo.de', // Formular-Ziel (via Web3Forms)
-  phone: '+49 2251 123 456',
+  phone: null as string | null, // bewusst entfernt bis Sipgate aktiv (siehe HANDOFF)
   location: 'Euskirchen · Köln · Bonn · Rheinland',
   region: 'Euskirchen & Großraum Köln/Bonn',
   instagram: '@lichtraum.studio',
