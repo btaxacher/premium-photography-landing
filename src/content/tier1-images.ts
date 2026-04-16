@@ -107,36 +107,36 @@ export const tier1Images: Record<string, ImageSet> = {
 
   'bewerbungsfotos-koeln': {
     hero: {
-      src: U('photo-1573496359142-b8d87734a5a2', 1400),
-      alt: 'Professionelles Bewerbungsfoto in editorialem Licht',
+      src: '/images/jobs/hero-koeln.jpg',
+      alt: 'Editorial Bewerbungsfoto einer Business-Frau in warmer Kölner Bürokulisse',
     },
-    gallery: pickGallery(BUSINESS, (i) => [
-      'Bewerbungsfoto Business Consulting Köln',
-      'LinkedIn-Headshot vor warmem Studiohintergrund',
-      'Bewerbungsfoto für Kanzlei mit Anzug',
-      'Professionelle Portraitaufnahme weiblich',
-      'Corporate Portrait mit natürlichem Licht',
-      'Bewerbungsbild Tech Branche Köln',
-      'Headshot mit Environmental-Hintergrund',
-      'Business Portrait im Lichtraum Studio',
-    ][i]),
+    gallery: [
+      { src: '/images/jobs/portrait-01.jpg', alt: 'Bewerbungsfoto Business Consulting Köln — Frau mit Cremeblazer', aspect: 'portrait' },
+      { src: '/images/jobs/portrait-02.jpg', alt: 'Bewerbungsfoto für Kanzlei Köln — Mann im Navy-Anzug', aspect: 'landscape' },
+      { src: '/images/jobs/portrait-03.jpg', alt: 'LinkedIn-Headshot mit authentischem Lachen, Kreativ-Branche', aspect: 'square' },
+      { src: '/images/jobs/portrait-04.jpg', alt: 'Bewerbungsbild Tech/Consulting — Mann mit Brille im Strickrollkragen', aspect: 'portrait' },
+      { src: '/images/jobs/portrait-05.jpg', alt: 'Executive-Portrait Frau 40+ in seidener Karamell-Bluse', aspect: 'landscape' },
+      { src: '/images/jobs/portrait-03.jpg', alt: 'Consulting-Portrait mit natürlichem Tageslicht', aspect: 'square' },
+      { src: '/images/jobs/portrait-09.jpg', alt: 'Senior-Executive-Portrait — Kanzlei-Partner, vertrauenswürdig', aspect: 'portrait' },
+      { src: '/images/jobs/portrait-07.jpg', alt: 'Young-Professional-Portrait Mann 25 in warmer Olive', aspect: 'landscape' },
+    ],
   },
 
   'bewerbungsfotos-euskirchen': {
     hero: {
-      src: U('photo-1494790108377-be9c29b29330', 1400),
-      alt: 'Bewerbungsfoto in warmem Studiolicht in Euskirchen',
+      src: '/images/jobs/hero-euskirchen.jpg',
+      alt: 'Bewerbungsfoto in warmem Studiolicht in Euskirchen — junger Mann im Caramel-Pullover',
     },
-    gallery: pickGallery(BUSINESS, (i) => [
-      'Bewerbungsfoto Azubi im Euskirchener Studio',
-      'Professionelles Headshot für Verwaltung',
-      'LinkedIn-Portrait mit Charakter',
-      'Express-Bewerbungsfoto innerhalb 24 Stunden',
-      'Outfit-Beratung für Bewerbungstermin',
-      'Bewerbungsbild im Lichtraum Studio Euskirchen',
-      'Corporate Headshot im neutralen Studiolicht',
-      'Branchen-passendes Bewerbungsporträt',
-    ][i]),
+    gallery: [
+      { src: '/images/jobs/portrait-06.jpg', alt: 'Azubi-Bewerbungsfoto im Euskirchener Studio — junge Frau 21', aspect: 'portrait' },
+      { src: '/images/jobs/portrait-07.jpg', alt: 'Handwerk/Startup-Portrait mit Bart, warm-olive Oberteil', aspect: 'landscape' },
+      { src: '/images/jobs/portrait-01.jpg', alt: 'Professionelles Headshot für Verwaltung — Frau mit Cremeblazer', aspect: 'square' },
+      { src: '/images/jobs/portrait-04.jpg', alt: 'Bewerbungsfoto für Tech-Branche — Mann mit Brille', aspect: 'portrait' },
+      { src: '/images/jobs/portrait-03.jpg', alt: 'Express-Bewerbungsfoto innerhalb 24 Stunden — natürliches Lachen', aspect: 'landscape' },
+      { src: '/images/jobs/portrait-04.jpg', alt: 'Outfit-Beratung für Bewerbungstermin — Consulting-Look', aspect: 'square' },
+      { src: '/images/jobs/portrait-05.jpg', alt: 'Wiedereinstieg-Bewerbungsbild — Frau 40+ im Lichtraum Studio', aspect: 'portrait' },
+      { src: '/images/jobs/portrait-02.jpg', alt: 'Branchen-passendes Bewerbungsporträt für Bank/Versicherung', aspect: 'landscape' },
+    ],
   },
 
   'fotograf-koeln': {

@@ -168,4 +168,64 @@ export const JOBS: readonly ImageJob[] = [
     filename: 'redesign/studio-interior.jpg',
     prompt: `${WARM_PREAMBLE} Square 1:1 (1400x1400). Interior of a warm photography studio in Germany. Natural daylight streaming through a large window on the left. Key elements: a simple wooden chair, a cream linen backdrop, a Hasselblad camera on a wooden stand, dried pampas grass in a tall ceramic vase, warm wood floor, exposed wooden beams on the ceiling. Color palette: creams, warm whites, soft golds, light oak wood. Intimate, crafted, not clinical. No people visible.`,
   },
+
+  // ================================================================
+  // JOBS — Bewerbungsfotos-Pool (Köln + Euskirchen)
+  // 2 Heroes (3:4) + 9 shared gallery portraits
+  // ================================================================
+  {
+    key: 'jobs-hero-koeln',
+    filename: 'jobs/hero-koeln.jpg',
+    prompt: `${WARM_PREAMBLE} Vertical 3:4 aspect ratio (1200x1600). Editorial professional headshot of a confident woman in her mid-30s, tailored charcoal blazer over a cream silk blouse, hair pulled back into a low bun, warm subtle smile looking directly at camera, three-quarter framing. Background: softly out-of-focus Köln-style modern office — warm brick wall, large industrial windows to the left with late-afternoon golden light, hint of urban skyline. Sophisticated, upscale business editorial. Not corporate stock.`,
+  },
+  {
+    key: 'jobs-hero-euskirchen',
+    filename: 'jobs/hero-euskirchen.jpg',
+    prompt: `${WARM_PREAMBLE} Vertical 3:4 aspect ratio (1200x1600). Editorial professional headshot of a friendly, approachable man in his late 20s, warm caramel-toned knit sweater over a pressed white collar shirt (no tie), short neat hair, gentle confident half-smile looking directly at camera, three-quarter crop. Background: warm cream studio backdrop with soft natural daylight from a window on the left, simple wooden shelf just visible out of focus. Small-town German studio feel — crafted, personal, not glossy.`,
+  },
+  {
+    key: 'jobs-portrait-01',
+    filename: 'jobs/portrait-01.jpg',
+    prompt: `${WARM_PREAMBLE} Vertical 4:5 aspect ratio (1200x1500). Business headshot of a woman in her early 30s wearing a simple cream blazer over a white camisole, shoulder-length brown hair, warm natural smile, shot at eye level against a soft warm-grey studio background. Classic three-point lighting, gentle shadow. Editorial LinkedIn quality.`,
+  },
+  {
+    key: 'jobs-portrait-02',
+    filename: 'jobs/portrait-02.jpg',
+    prompt: `${WARM_PREAMBLE} Vertical 4:5 aspect ratio (1200x1500). Business headshot of a man in his mid-40s in a deep-navy suit and white shirt with an open collar, short silver-streaked hair, calm confident expression with a subtle closed-lip smile, warm beige studio background. Professional executive portrait, not stuffy.`,
+  },
+  {
+    key: 'jobs-portrait-03',
+    filename: 'jobs/portrait-03.jpg',
+    prompt: `${WARM_PREAMBLE} Vertical 4:5 aspect ratio (1200x1500). Business headshot of a mixed-race woman in her late 20s, natural afro-textured hair, wearing a soft rust-colored blouse, genuine warm laugh captured mid-motion, eyes bright, environmental background suggesting a warm wooden office space softly blurred. Editorial, very approachable.`,
+  },
+  {
+    key: 'jobs-portrait-04',
+    filename: 'jobs/portrait-04.jpg',
+    prompt: `${WARM_PREAMBLE} Vertical 4:5 aspect ratio (1200x1500). Business headshot of a man in his early 30s with round tortoise-shell glasses, dark hair, wearing a charcoal knit turtleneck, neutral confident expression, shot slightly from above, warm cream studio background. Creative-industry / tech / consultancy look.`,
+  },
+  {
+    key: 'jobs-portrait-05',
+    filename: 'jobs/portrait-05.jpg',
+    prompt: `${WARM_PREAMBLE} Vertical 4:5 aspect ratio (1200x1500). Business headshot of a woman in her late 40s, honey-blonde shoulder-length bob, wearing a warm-caramel silk blouse with a simple gold necklace, poised confident smile with laugh lines, sophisticated and experienced, soft champagne studio background.`,
+  },
+  {
+    key: 'jobs-portrait-06',
+    filename: 'jobs/portrait-06.jpg',
+    prompt: `${WARM_PREAMBLE} Vertical 4:5 aspect ratio (1200x1500). Business headshot of a young Apprenticeship / Ausbildungs-age woman around 21, straight dark hair in a half-up style, simple cream collared shirt, genuine warm smile, approachable and fresh, soft warm-grey backdrop. Entry-level professional feel — perfect for Azubi-Bewerbung.`,
+  },
+  {
+    key: 'jobs-portrait-07',
+    filename: 'jobs/portrait-07.jpg',
+    prompt: `${WARM_PREAMBLE} Vertical 4:5 aspect ratio (1200x1500). Business headshot of a man around 25, short brown beard trimmed neatly, warm-olive long-sleeve Henley over a white t-shirt collar visible, gentle half-smile, environmental creative-office background softly blurred. Young-professional, craftsperson or startup-founder look.`,
+  },
+  {
+    key: 'jobs-portrait-08',
+    filename: 'jobs/portrait-08.jpg',
+    prompt: `${WARM_PREAMBLE} Vertical 4:5 aspect ratio (1200x1500). Business headshot of a woman in her late 30s, long dark-brown hair loosely over one shoulder, warm-mustard silk blouse, thoughtful gentle smile while looking slightly off-camera to the left, soft daylight from a window on the left, cream wall behind. Editorial-consulting look, sophisticated.`,
+  },
+  {
+    key: 'jobs-portrait-09',
+    filename: 'jobs/portrait-09.jpg',
+    prompt: `${WARM_PREAMBLE} Vertical 4:5 aspect ratio (1200x1500). Business headshot of a man in his mid-50s, salt-and-pepper hair, charcoal blazer over light-grey shirt with open collar, reassuring calm expression with deep smile lines, warm beige backdrop. Senior executive / Kanzlei-Partner look, trustworthy.`,
+  },
 ]

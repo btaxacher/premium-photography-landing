@@ -6,8 +6,9 @@ import sharp from 'sharp'
 import { readdir } from 'fs/promises'
 import * as path from 'path'
 
-const IMG_DIR = path.join(process.cwd(), 'public/images/redesign')
-const BACKUP_DIR = path.join(process.cwd(), 'public/images/redesign-watermarked-backup')
+const SUBDIR = process.argv[2] ?? 'redesign'
+const IMG_DIR = path.join(process.cwd(), `public/images/${SUBDIR}`)
+const BACKUP_DIR = path.join(process.cwd(), `public/images/${SUBDIR}-watermarked-backup`)
 
 async function main() {
   const { mkdir, copyFile, rename } = await import('fs/promises')
