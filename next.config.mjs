@@ -15,11 +15,11 @@ const nextConfig = {
       { source: '/hochzeit-koeln', destination: '/hochzeitsfotograf-koeln', permanent: true },
       { source: '/hochzeit-euskirchen', destination: '/hochzeitsfotograf-euskirchen', permanent: true },
       { source: '/fotografin-koeln', destination: '/fotograf-koeln', permanent: true },
-      { source: '/fotografin-euskirchen', destination: '/fotograf-euskirchen', permanent: true },
+      { source: '/fotografin-euskirchen', destination: '/hochzeitsfotograf-euskirchen', permanent: true },
       // Legacy English → German canonical
       { source: '/work', destination: '/portfolio', permanent: true },
-      { source: '/about', destination: '/ueber-uns', permanent: true },
-      { source: '/contact', destination: '/kontakt', permanent: true },
+      { source: '/about', destination: '/', permanent: true },
+      { source: '/contact', destination: '/#contact', permanent: true },
       // Blog slug renames (V3 Sistrix-keyword alignment) + safety-net for homepage journal links
       { source: '/blog/was-kostet-hochzeitsfotograf-koeln-2026', destination: '/blog/hochzeitsfotograf-kosten-preise', permanent: true },
       { source: '/blog/schoenste-hochzeitslocations-rhein-erft', destination: '/blog/hochzeitslocations-nrw-rheinland', permanent: true },
